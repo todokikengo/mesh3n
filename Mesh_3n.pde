@@ -1,13 +1,13 @@
 void setup(){
   int l = 3; //縦
-  int s = 10; //横
+  int s = 15; //横
   // NodeSet ns = new NodeSet(l,s);
   // EdgeSet es = new EdgeSet(l,s,ns);
   // Graph g = new Graph(ns,es,l,s);
   int start = millis() ;
   int x = s + 1 ; //何列目か
   int y = 5 ;  //連結成分の繋がり方
-  int z = 5 * s - 3 + 1 ; //辺の追加本数
+  int z = 5 * s - 3 + 1 ; //辺の本数
   long[][][] data = new long[x][y][z] ;
   data[1][0][2] = 1 ; //初期値
   data[1][1][1] = 1 ;
@@ -21,7 +21,7 @@ void setup(){
           long sum = data[count - 1][i][j] ;
           if(i == 0){
             //連結から連結 0 -> 0
-          //  print("0");
+            //  print("0");
             data[count][0][j + 3] += sum * 8 ;
             data[count][0][j + 4] += sum * 5 ;
             data[count][0][j + 5] += sum ;
@@ -37,7 +37,7 @@ void setup(){
             data[count][4][j + 1] += sum * 3 ;
           }else if(i == 1){
             //非連結から連結 1 -> 0
-          //  print("1");
+            //  print("1");
             data[count][0][j + 4] += sum * 3 ;
             data[count][0][j + 5] += sum ;
             //非連結から非連結 1 -> 1
@@ -98,7 +98,7 @@ void setup(){
       println("辺の本数 " + k + " 本　：" + data[count-1][0][k] + "通り");
   }
   print("time   ");
-  println( millis() - start) ;
+  println(millis() - start);
   exit();
 }
   // long[] connectedSpanningSubgraphNum = new long[es.size() + 1] ;
