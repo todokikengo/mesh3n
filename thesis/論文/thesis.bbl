@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{o-GAS}
+Darmann, A.: Group Activity Selection from Ordinal Preferences., Lecture Notes
+in Computer Science, vol. 9346, chap. Algorithmic Decision Theory, pp.
+35--51. Springer International Publishing (2015)
+
+\bibitem{a-GAS}
+Darmann, A., Elkind, E., Lang, J., Kurz, S., Schauer, J., Woeginger, G.: Group
+Activity Selection Problem, Lecture Notes in Computer Science, vol. 7695, pp.
+156--169. Springer International Publishing (2012)
+
+
+\end{thebibliography}
