@@ -1,7 +1,7 @@
 float p=0.9;
 void setup(){
-  int l = 4;     //縦
-  int s = 5;     //横
+  int l = 3;     //縦
+  int s = 8;     //横
   NodeSet ns = new NodeSet(l,s);
   EdgeSet es = new EdgeSet(l,s,ns);
   Graph g = new Graph(ns,es);
@@ -9,10 +9,10 @@ void setup(){
   int[]counts = new int[size];
   int start = millis() ;
   subset_BT(new boolean[es.size()], 0 ,g ,counts) ;
-//  println("信頼度　" + g.reliability);
+  println("信頼度　" + g.reliability);
   print("time  ");
   println(millis() - start) ;
-//  g.show();
+  g.show();
   for(int i = 0 ; i<size ; i++)
   println("辺の数 " + (i+(g.ns.size()-1)) + " : " + counts[i]);
   exit();
@@ -32,8 +32,8 @@ void subset_BT(boolean[] b, int k,Graph g,int[] counts) {
     if(gg.isConnected()){
       counts[gg.es.size() - (g.ns.size()-1)]++;
 
-//      gg.getReliability(g) ;
-//      g.reliability += gg.reliability ;
+      gg.getReliability(g) ;
+      g.reliability += gg.reliability ;
     }
   }
   else {

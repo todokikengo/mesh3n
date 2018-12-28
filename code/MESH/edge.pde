@@ -5,7 +5,6 @@ class Edge extends ArrayList<Node>{
   }
   Edge(){
   }
-
 }
 
 

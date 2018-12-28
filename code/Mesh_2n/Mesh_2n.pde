@@ -1,6 +1,6 @@
 void setup(){
   int l = 2; //縦
-  int s = 20; //横
+  int s = 10; //横
   // NodeSet ns = new NodeSet(l,s);
   // EdgeSet es = new EdgeSet(l,s,ns);
   // Graph g = new Graph(ns,es,l,s);
