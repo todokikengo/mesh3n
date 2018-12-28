@@ -36,7 +36,7 @@ class DualMesh {
     }
   }
   int[] backtracking() {
-    int[] counts = new int[faces.size() + 1] ;
+    int[] counts = new int[faces.size()] ;
     int[] ci = new int[faces.size()] ;
     for (int i = 0 ; i < ci.length ; i++) {
       ci[i] = i ;

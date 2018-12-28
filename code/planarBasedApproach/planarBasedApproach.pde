@@ -1,5 +1,5 @@
-int rowNum = 7 ;
-int columnNum = 3 ;
+int rowNum = 4 ;
+int columnNum = 5 ;
 
 // nodeNum = rowNum * columnNum ;
 // edgeNum = rowNum * (columnNum - 1) + columnNum * (rowNum - 1)
