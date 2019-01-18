@@ -29,3 +29,21 @@ void subset_BT(int k, Graph g, int[] counts, int edgeNum, int deleteCap) {
     subset_BT(k + 1, g, counts, edgeNum + 1, deleteCap) ;
   }
 }
+
+/*
+void subset_BT_UF(int k, Graph g, int[] counts, int edgeNum, int deleteCap) {
+  if (k == counts.length - 1) {
+    if (g.isConnected()) counts[edgeNum]++ ;
+  }
+  else {
+    Edge e = g.es.get(k) ;
+    if (e.deletable() && deleteCap > 0) {
+      e.setFalse() ;
+      subset_BT_UF(k + 1, g, counts, edgeNum, deleteCap - 1) ;
+      e.setTrue() ;
+    }
+    subset_BT_UF(k + 1, g, counts, edgeNum + 1, deleteCap) ;
+  }
+}
+
+*/

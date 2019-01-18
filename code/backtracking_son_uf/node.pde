@@ -3,22 +3,22 @@ class Node{
   EdgeSet edges ;
   boolean reached ;
   int deletedNum ;
-  //Node parent ;
+  Node parent ;
+  int size ;
   Node(int i) {
     index = i;
     deletedNum = 0 ;
+    size = 1 ;
   }
   Node() {
   }
   boolean deletable() {
     return (edges.size() - deletedNum > 1) ;
   }
-  /*
   Node getRoot() {
     if (parent == null) return this ;
     return parent.getRoot() ;
   }
-  */
 }
 
 class NodeSet extends ArrayList<Node>{
