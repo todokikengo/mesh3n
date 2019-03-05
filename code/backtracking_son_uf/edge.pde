@@ -1,5 +1,6 @@
 class Edge extends ArrayList<Node>{
-  boolean valid ;
+  boolean valid
+  float p = 0.1 ;
   Edge(Node u, Node v){
     add(u);
     add(v);
